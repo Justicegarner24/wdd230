@@ -1,8 +1,27 @@
 body {
     text-align: center;
 }
-
-#primary {
+table .colors {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr; 
+    margin-left: 300px;
+}
+.primary {
     background-color: #B4ADEA;
-    color: white;
+    color: black;
+}
+
+.secondary {
+    background-color: #EF767A;
+    color: black;
+}
+
+.accent1 {
+    background-color: #59FFA0;
+    color: black;
+}
+
+.accent2 {
+    background-color: #FFED65;
+    color: black;
 }
