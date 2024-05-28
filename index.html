@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/favicon" href="../images/favicon-6.ico">
+    <title>Justice's Homepage for WDD230</title>
+    <meta property="type" content="website">
+    <meta property="og:image" content="https://media.gettyimages.com/id/1491567345/photo/idaho-falls-idaho.jpg?s=612x612&w=gi&k=20&c=ROF5KSIRMIJx-zKDfdSZZj5Zmwxqyj8S3VkLTodtNw4=">
+    <meta property="url" content="https://justicegarner24.github.io/wdd230.1/">
+</head>
+<body>
+    <header>
+        <div id="header">
+            <img id="profile-img" src="images/profile.jpeg" alt="my profile">
+            <h1>Justice Garner</h1>
+            <div id="menu"></div>
+        </div>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="home page link" class="active">Home</a></li>
+                <li><a href="lesson03/chamber-site-plan.html" title="site plan page link">Site Plan</a></li>
+                <li><a href="chamber/index.html" title="chamber page link">Chamber</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-title">
+                <h2>Orem Utah Temple</h2>
+            </div>
+            <picture>
+                <source media="(max-width: 400px )" srcset="images">
+                <source media="(max-width: 960px )" srcset="images">
+                <img src="images" alt="Orem Utah LDS Temple" width="1280" height="800">
+            </picture>
+        </section>
+        <h2 class="attribute">WDD 230: Web Frontend Development</h2>
+        <div class="card-grid">
+            <section class="card">
+                <div class="card-header">
+                    <h3>Learning Activities</h3>
+                </div>
+                <div class="card-content">
+                    <ul class="la-card"></ul>
+                       <li>
+                            Lesson 01:
+                           <a href="week.01/index.html" target="_blank">Holy Grail Layout</a>
+                            |
+                           <a href="https://codepen.io/Justicegarner24/pen/pomNdgL"</a>
+                            |
+                            <a href="week.01/media-query.html" target="_blank">Media Query</a>
+
+                       </li>
+                       <li>
+                           Lesson 02:
+                           <a href
+                       </li>
+                </div>
+            </section>
+            <section class="card">
+                <div class="card-header">
+                    <h3>Information</h3>
+                </div>
+                <div class="card-content">
+                    <div>Number of Visits: <span class="visits"></span></div>
+                    <article id="weather">
+                        <h4>Current Weather</h4>
+                        <p id="location"></p>
+
+                        <figure>
+                            <div class="temp-area"></div>
+                            <figcaption id="weather-description"></figcaption>
+                        </figure>
+
+                        <div class="alt-weather">
+                            <div class="weather-box">Feels Like:<span id="feels-like"></span></div>
+                            <div class="weather-box">Wind:<span id="wind-speed"></span></div>
+                            <div class="weather-box">Humidity:<span id="humidity"></span></div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <div class="map">
+                <iframe
+                    src="https://maps.app.goo.gl/nFxmA48kN9rf9do3A"
+                    width="600"
+                    height="450"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    name="Google Maps"
+                ></iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <div class="copyright">
+                <p>wdd-230-a9 <span id="cYear"></span> | Justice Garner | Orem,Utah</p>
+                <img id="orem-flag" src="images/orem-flag.png" alt="Orem-flag" loading="lazy" />
+            </div>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/justice-garner-854a1423a/" target="_blank">
+                    <img src="images/linkedin-icon.png" alt="instagram-icon" loading="lazy" />
+                </a>
+                <a href="https://www.instagram.com/justicegarner/" target="_blank">
+                    <img src="images/instagram-logo.png" alt="instagram-icon" loading="lazy" />
+                </a>
+                <a href="https://www.facebook.com/justice.garner.94/" target="_blank">
+                    <img src="images/facebook-logo.png" alt="face book-icon" loading="lazy" />
+                </a>
+            </div>
+        </div>
+
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+    <script src="scripts/links.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+</html>
