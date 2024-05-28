@@ -1,6 +1,3 @@
-/* CSS Style Sheet for media-query.html */
-
-/* Media query for viewport width of 500px or greater */
 @media screen and (min-width: 500px) {
     header {
         background-color: black;
