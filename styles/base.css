@@ -26,7 +26,6 @@
    --nav-hover-link-color: #FFED65;
    --nav-hover-background-color: #f59296;
 }
-
 html,
 body {
     display: flex;
@@ -312,7 +311,7 @@ footer .social img {
 #weather h4 {
     margin: 0;
     padding: 15px;
-    background-color: orange;
+    background-color: #EF767A;
     color: white;
     text-transform: uppercase;
 }
@@ -349,7 +348,7 @@ footer .social img {
 }
 .alt-weather {
     display: flex;
-    flex-direction: row;
+    flex-direction: none;
     justify-content: center;
     align-items: center;
     margin: 10px;
@@ -362,7 +361,6 @@ footer .social img {
     align-items: center;
     gap: 2px;
     padding: 15px;
-    /* border: 1px solid var(--accent3-color); */
     font-size: .8rem;
 }
 .weather-box span{
