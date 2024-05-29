@@ -1,3 +1,17 @@
+/* Nav settings */
+.navbar {
+    background-color: #59FFA0; /* Background color */
+    color: #fff; /* Text color */
+    padding: 10px 20px; /* Padding */
+    display: flex; /* Flexbox layout */
+    justify-content: space-between; /* Align items horizontally */
+    align-items: center; /* Align items vertically */
+}
+.hero-container {
+	width: 100%;
+}
+
+
 
 
 body {
@@ -43,7 +57,7 @@ article p {
 
 .callout {
 	color: #ffffff;
-	background-color: #702963;
+	background-color: #B4ADEA;
     padding-left: 10px;
     grid-column: 1/3;
     padding: 1rem;
@@ -55,3 +69,5 @@ footer {
 	font-size: smaller;
 	text-align: left;
 }
+
+
