@@ -158,9 +158,8 @@ iframe {
     top: 30px;
     left: 30px;
     background: radial-gradient(white, #B4ADEA);
-    border: 1px solid #59FFA0(101, 150, 197, 1);
-    padding: 0.8rem;
-    box-shadow: 0 0 3rem #fff;
+    border: 1px solid #59FFA0;
+    padding: 0.8px;
     opacity: 0.65;
     white-space: nowrap;
     border-radius: 30px;
@@ -347,7 +346,7 @@ footer .social img {
 }
 .alt-weather {
     display: flex;
-    flex-direction: none;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 10px;
