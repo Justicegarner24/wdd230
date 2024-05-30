@@ -142,7 +142,6 @@ main {
     padding: 20px;
     background-color: var(--paragraph-background-color);
     color: white;
-    text-shadow: 2px 4px 2px black
 }
 iframe {
     border: none;
@@ -166,11 +165,12 @@ iframe {
     white-space: nowrap;
     border-radius: 30px;
 }
-.hero-title p {
+.hero-title h2 {
     margin: 0;
     padding: 0.25rem;
     font-weight: 700;
     font-size: 1.1rem;
+    text-shadow: 2px 4px 2px black;
 }
 
 .attribute {
