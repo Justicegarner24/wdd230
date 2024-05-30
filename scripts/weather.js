@@ -1,10 +1,21 @@
-const apiKey = "0aec6412eede92415f476e7030db63f4";
+//const apiKey = "0aec6412eede92415f476e7030db63f4";
 
-const lat = 33.495313;
-const lon = -112.356;
+//const lat = 40.2969;
+//const lon = -111.6946;
 
-const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
+//const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
 
+fetch("https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/orem%20Utah?unitGroup=us&key=YOUR_API_KEY&contentType=json", {
+  "method": "GET",
+  "headers": {
+  }
+  })
+.then(response => {
+  console.log(response);
+})
+.catch(err => {
+  console.error(err);
+});
 async function apiFetch() {
     try {
         const response = await fetch(url);
@@ -49,7 +60,7 @@ function displayResults(data) {
 
 
     data.weather.forEach((weatherEvent) => {
-        const iconsrc = `https://openweathermap.org/img/wn/${weatherEvent.icon}@2x.png`;
+        const iconsrc = 'https://www.visualcrossing.com/weather/weather-data-services/orem?v=api#';
         let desc = weatherEvent.description;
         weatherIcon.setAttribute("src", iconsrc);
         weatherIcon.setAttribute("alt", desc);
