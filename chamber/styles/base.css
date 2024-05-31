@@ -1,11 +1,29 @@
 /* Nav settings */
 .navbar {
-    background-color: #59FFA0; /* Background color */
-    color: #fff; /* Text color */
-    padding: 10px 20px; /* Padding */
-    display: flex; /* Flexbox layout */
-    justify-content: space-between; /* Align items horizontally */
-    align-items: center; /* Align items vertically */
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background-color: var(--primary-color);
+    color: var(--nav-link-color);
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+    text-shadow: 1px 3px 1px black;
+}
+.navbar li {
+    display: none;
+}
+.navbar li a {
+    display: block;
+    padding: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--nav-link-color);
+}
+.navbar li a:hover {
+    background-color: var(--nav-hover-background-color);
+    color: var(--nav-hover-link-color);
+    font-weight: 700;
 }
 .hero-container {
 	width: 100%;
