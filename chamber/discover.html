@@ -7,8 +7,7 @@
     <meta name="description"
     content="Official Chamber Site for Idaho Falls">
     <meta name="author" content="Justice Garner">
-    <link rel="stylesheet" href="styles/base.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/main.css">
     <link rel="icon" href="images/favicon-7.ico">
     
     <meta property="og:title" content="idaho Falls Chamber of Commerce">
@@ -20,31 +19,179 @@
 </head>
 <body>
     <header>
-        <div id="logo">
-            <img id="logo-img" src="images/IF-logo.webp" alt="logo">
-            <div id="menu"></div>
+        <div class="logo">
+            <img src="images/idaho-falls-logo.webp" alt="logo" width="80" height="80">
+            <h1 id="logo-text">Idaho Falls Chamber of Commerce</h1>
+        </div>
+        <div class="navbar">
+            <div class="nav-toggle">
+                <input id="nav-toggle" class="nav-toggle" type="checkbox">
+                <nav class="nav-links">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="discover.html">Discover</a>
+                        </li>
+                        <li>
+                            <a href="directory.html">Directory</a>
+                        </li>
+                        <li>
+                            <a href="join.html">Join</a>
+                        </li>
+                    </ul>
+                </nav>
+                <label class="nav-button" for="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <div class="dark-mode">
+                <input id="darkOption" class="checkbox" type="checkbox"
+                onclick="screenMode()">
+                <label class="toggle" for="darkOption">
+                    <span class="slider"></span>
+                </label>
+            </div>
         </div>
     </header>
-
-    <nav>
-        <ul class="navbar">
-            <li><a href="index.html" >Home</a></li>
-            <li><a href="discover.html"class="active-page">Discover</a></li>
-        </ul>
-    </nav>
-
     <main>
-        
+        <section class="hero-discover">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Idaho Falls Chamber of Commerce</h1>
+                    <p>Discover the latest news and events happening in Idaho Falls.</p>
+                </div>
+            </div>
+        </section>
+        <div class="wrapper">
+            <div class="sidebar">
+                <section class="section1">
+                    <div class="business">Back so soon? Awesome!</div>
+                    <h1>A Head For Business</h1>
+                    <p>The Greater Idaho Falls Chamber of Commerce 
+                        is a member driven, non-profit organization 
+                        that serves as the voice of the business community.
+                    </p>
+                    <p>The Chamber exists to promote business success and 
+                        enhance the quality of life by being the leader 
+                        in economic, community and business development.
+                    </p>
+                </section>
+                <section class="section2">
+                    <div class="community">Supporting Community</div>
+                    <p>The Chamber offers a variety of programs and services 
+                        for you to learn, grow and meet other businesses and 
+                        community leaders in the greater Idaho Falls area.
+                    </p>
+                    <p>Take your business to the next level with our programs 
+                        and services. As a Chamber member, you become part 
+                        of a group of companies and organizations that invest 
+                        in the greater Idaho Falls area, it’s growth and prosperity.
+                    </p>
+                </section>
+                <section class="section3">
+                    <div class="dine">Find The Best Food In Idaho Falls</div>
+                    <p>Idaho Faalls is home to a variety of dining options. 
+                        From casual cafes to fine dining restaurants, there 
+                        is something for everyone. 
+                    </p>
+                    <p>Whether you are looking for a quick bite to eat or a 
+                        gourmet meal, Idaho Falls has what your craving. 
+                    </p>
+                </section>
+                <section class="section4">
+                    <div class="stay">Downtown Idaho Falls has many options of places to stay</div>
+                    <p>The West Valley offers a variety of accommodations to fit every 
+                        budget and style. From luxury resorts to budget-friendly hotels, 
+                        you are sure to find the perfect place to stay.
+                    </p>
+                    <p>Stay in one of our many luxury hotels in Idaho Falls and enjoy your stay.
+                    </p>
+                </section>
+                <section class="section5">
+                    <div class="relocate">Looking To Move To Idaho Falls?</div>
+                    <p>Idaho Falls is a great place to live, work, and play. 
+                        With a variety of housing options, top-rated schools, 
+                        and a thriving job market, Idaho Falls has something for 
+                        everyone. 
+                    </p>
+                    <p>Idaho Falls is a growing community and many people from 
+                        all over the country are looking to move to a place they 
+                        can call home.
+                    </p>
+                </section>
+                <section class="section6">
+                    <div class="mission">Our Mission</div>
+                    <p>Our mission is to foster a professional, 
+                        entrepreneurial spirit within our community, 
+                        promoting positive growth and enhancing our 
+                        reputation and that of the Greater Idaho Falls 
+                        area through collaboration and innovation.
+                    </p>
+                </section>
+            </div>
+            <div class="content-imgs">
+                <figure>
+                    <img src="images/iconic-skateboard.webp" alt="" loading="lazy" width="700" height="500">
+                    <figcaption>Welcome to Idaho Falls!</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/snake-river.webp" alt="" loading="lazy" width="700" height="500">
+                    <figcaption>The Idaho Falls Community</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/idaho-falls-food.webp" alt="" loading="lazy" width="700" height="500">
+                    <figcaption>Fine Dining in Idaho Falls</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/red-lion-hotel.webp" alt="" loading="lazy" width="700" height="500">
+                    <figcaption>Staying in Idaho Falls</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/downtown-if.webp" alt="" loading="lazy" width="700" height="500">
+                    <figcaption>Relocating to Idaho Falls</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/temple-in-if.webp" alt="" loading="lazy" width="700" height="500">
+                    <figcaption>Our Mission</figcaption>
+                </figure>
+            </div>
+        </div>
     </main>
-
     <footer>
-        <div id="contact-info">
-            <h2>Idaho Falls Chamber of Commerce </h2>
-            <h4>123 Main St. Idaho Falls, ID 83401</h4>
-            <h4>555-555-5555</h4>
-            <h4>Ql6QW@example.com</h4>
+        <section class="footer-info">
+            <div class="footer-title">
+                <img src="images/idaho-falls-logo.webp" alt="logo" width="80" height="80">
+                <h1>Idaho Falls Chamber of Commerce</h1>
+            </div>
+            <div class="footer-address">
+                <h3>Contact</h3>
+                <address>
+                    123 Main St.
+                    <br>
+                    Idaho Falls, ID 83401
+                    <br>
+                    <a class="footer-btn" href="mailto:Ql6QW@example.com">Email Us</a>
+                </address>
+            </div>
+            <div class="legal">
+                <div class="copyright">
+                    <span>
+                        <span id="cYear">© 2024</span>
+                        Idaho Falls Chamber of Commerce | Justice Garner | WDD 230 website
+                    </span>
+                </div>
+                <div class="last-modified">
+                    <span>
+                        Last Updated: <span id="lastModified"></span>
+                    </span>
+                </div>">
+            </div>
         </div>
     </footer>
-
+    <script src="scripts/chamber.js"></script>
 </body>
 </html>

@@ -20,19 +20,44 @@
 </head>
 <body>
     <header>
-        <div id="logo">
-            <img id="logo-img" src="images/IF-logo.webp" alt="logo">
-            <div id="menu"></div>
+        <div class="logo">
+            <img src="images/idaho-falls-logo.webp" alt="logo" width="80" height="80">
+            <h1 id="logo-text">Idaho Falls Chamber of Commerce</h1>
+        </div>
+        <div class="navbar">
+            <div class="nav-toggle">
+                <input id="nav-toggle" class="nav-toggle" type="checkbox">
+                <nav class="nav-links">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="discover.html">Discover</a>
+                        </li>
+                        <li>
+                            <a href="directory.html">Directory</a>
+                        </li>
+                        <li>
+                            <a href="join.html">Join</a>
+                        </li>
+                    </ul>
+                </nav>
+                <label class="nav-button" for="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <div class="dark-mode">
+                <input id="darkOption" class="checkbox" type="checkbox"
+                onclick="screenMode()">
+                <label class="toggle" for="darkOption">
+                    <span class="slider"></span>
+                </label>
+            </div>
         </div>
     </header>
-
-    <nav>
-        <ul class="navbar">
-            <li><a href="index.html" class="active-page">Home</a></li>
-            <li><a href="discover.html">Discover</a></li>
-        </ul>
-    </nav>
-
     <main>
         <div class="hero-container">
             <picture>
@@ -75,13 +100,36 @@
     </main>
 
     <footer>
-        <div id="contact-info">
-            <h2>Idaho Falls Chamber of Commerce </h2>
-            <h4>123 Main St. Idaho Falls, ID 83401</h4>
-            <h4>555-555-5555</h4>
-            <h4>Ql6QW@example.com</h4>
+        <section class="footer-info">
+            <div class="footer-title">
+                <img src="images/idaho-falls-logo.webp" alt="logo" width="80" height="80">
+                <h1>Idaho Falls Chamber of Commerce</h1>
+            </div>
+            <div class="footer-address">
+                <h3>Contact</h3>
+                <address>
+                    123 Main St.
+                    <br>
+                    Idaho Falls, ID 83401
+                    <br>
+                    <a class="footer-btn" href="mailto:Ql6QW@example.com">Email Us</a>
+                </address>
+            </div>
+            <div class="legal">
+                <div class="copyright">
+                    <span>
+                        <span id="cYear">© 2024</span>
+                        Idaho Falls Chamber of Commerce | Justice Garner | WDD 230 website
+                    </span>
+                </div>
+                <div class="last-modified">
+                    <span>
+                        Last Updated: <span id="lastModified"></span>
+                    </span>
+                </div>">
+            </div>
         </div>
     </footer>
-
+    <script src="scripts/chamber.js"></script>
 </body>
 </html>
