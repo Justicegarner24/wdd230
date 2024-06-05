@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Single+Day&display=swap');
+
+:root {
+    --back: rgb(47, 184, 42);
+    --back2: rgba(247, 244, 40, 0.5);
+    --foredark: hsla(0, 0%, 10%, 1);
+    --forelight: hsla(0, 0%, 100%, 1);
+    --border: hsla(0, 0%, 0%, 0.8);
+    --borderlight: hsla(0, 0%, 0%, 0.3);
+    --shadow: hsl(0, 0%, 62%);
+    --zebra: hsl(0, 0%, 93%, 1);
+}
+
+body {
+    font-family: "singleday", sans-serif;
+}
+
+table {
+    margin: 10px auto;
+    border: thin solid var(--border);
+    box-shadow: 0 0 10px var(--shadow);
+    border-collapse: collapse;
+}
+
+caption {
+    padding: 10px;
+    caption-side: bottom;
+    color: var(--back);
+    font-size: 0.85rem;
+}
+
+tr:first-child th,
+.highlight {
+    background-color: var(--back);
+    color: var(--forelight);
+    font-size: xx-large;
+    padding: 25px;
+}
+tr:nth-child(2) th:first-child,
+.highlight {
+    background-color: var(--back);
+    color: var(--forelight);
+    font-size: xx-large;
+    padding: 25px;
+}
+
+th,
+td {
+    padding: 7px 15px;
+    border: 1px solid var(--borderlight);
+}
+
+th {
+    background-color: var(--back2);
+    font-size: x-large;
+    padding: 20px;
+}
+
+td {
+    text-align: center;
+}
+
+tbody tr:nth-child(even) {
+    background-color: var(--zebra);
+}
+
+tbody tr td:first-child {
+    font-size: large;
+    font-weight: bold;
+}
