@@ -51,6 +51,7 @@ header {
     background-color: #EF767A
 }
 #profile-img {
+    padding-right: 50%;
     margin-left: 500px;
     margin-top: 10px;
     margin-bottom: 10px;
