@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="description"
+    content="Official Chamber Site for Idaho Falls">
+    <meta name="author" content="Justice Garner">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon-7.ico">
+    
+    <meta property="og:title" content="idaho Falls Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://example.com/image.jpg">
+    <meta property="og:url" content="https://example.com/your-page-url">
+    <meta property="og:description" content="A site to learn of all the events happening in Idaho Falls">
+    <meta property="og:site_name" content="Idaho Falls Chamber of Commerce">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/idaho-falls-logo.webp" alt="logo" width="80" height="80">
+            <h1 id="logo-text">Idaho Falls Chamber of Commerce</h1>
+        </div>
+        <div class="navbar">
+            <div class="nav-toggle">
+                <input id="nav-toggle" class="nav-toggle" type="checkbox">
+                <nav class="nav-links">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="discover.html">Discover</a>
+                        </li>
+                        <li>
+                            <a href="directory.html">Directory</a>
+                        </li>
+                        <li>
+                            <a href="join.html">Join</a>
+                        </li>
+                    </ul>
+                </nav>
+                <label class="nav-button" for="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            </div>
+            <div class="dark-mode">
+                <input id="darkOption" class="checkbox" type="checkbox"
+                onclick="screenMode()">
+                <label class="toggle" for="darkOption">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="form-section">
+            <form method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Applicant Information</legend>
+                    <label class="top">First Name* <input type="text" id="fname" name="fname" placeholder="First Name" required /></label>
+                    <label class="top">Last Name* <input type="text" id="lname" name="lname" placeholder="Last Name" required /></label>
+                    <label class="top"
+                        >Title or Position*
+                        <input type="text" id="position" name="position" pattern="[a-zA-Z\- ]{7,}" required />
+                    </label>
+                    <label class="top"
+                        >Email*
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="someone@gmail.com"
+                            required
+                            title="Please enter a valid email address"
+                    /></label>
+                    <label class="top"
+                        >Mobile Phone*
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="5559991234" required
+                    /></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+                    <label class="top">Business/Organization's Name* <input type="text" id="business" name="business" required /></label>
+                    <label class="top">Business/Organization Description <textarea id="description" name="description"></textarea></label>
+                </fieldset>
+                <fieldset>
+                    <legend>Membership</legend>
+                    <div>Membership Level</div>
+                    <label class="sbs"><input type="radio" name="membership" value="np" required /> Non Profit</label>
+                    <label class="sbs"><input type="radio" name="membership" value="bronze" required /> Bronze Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="silver" required /> Silver Membership</label>
+                    <label class="sbs"><input type="radio" name="membership" value="gold" required /> Gold Membership</label>
+                </fieldset>
+                <div id="submitmessage" class="hide" role="alert"></div>
+                <button class="submitBtn" type="submit" onclick="validateForm(event)">Join</button>
+
+                <input type="hidden" name="timestampmilli" id="timestampmilli" />
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <section class="footer-info">
+            <div class="footer-title">
+                <img src="images/idaho-falls-logo.webp" alt="logo" width="80" height="80">
+                <h1>Idaho Falls Chamber of Commerce</h1>
+            </div>
+            <div class="footer-address">
+                <h3>Contact</h3>
+                <address>
+                    123 Main St.
+                    <br>
+                    Idaho Falls, ID 83401
+                    <br>
+                    <a class="footer-btn" href="mailto:Ql6QW@example.com">Email Us</a>
+                </address>
+            </div>
+            <div class="legal">
+                <div class="copyright">
+                    <span>
+                        <span id="cYear">© 2024</span>
+                        Idaho Falls Chamber of Commerce | Justice Garner | WDD 230 website
+                    </span>
+                </div>
+                <div class="last-modified">
+                    <span>
+                        Last Updated: <span id="lastModified"></span>
+                    </span>
+                </div>">
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/chamber.js"></script>
+</body>
+</html>
