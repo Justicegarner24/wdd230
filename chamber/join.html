@@ -63,39 +63,24 @@
             <form method="get" action="thankyou.html">
                 <fieldset>
                     <legend>Applicant Information</legend>
-                    <label class="top">First Name* <input type="text" id="fname" name="fname" placeholder="First Name" required /></label>
-                    <label class="top">Last Name* <input type="text" id="lname" name="lname" placeholder="Last Name" required /></label>
-                    <label class="top"
-                        >Title or Position*
-                        <input type="text" id="position" name="position" pattern="[a-zA-Z\- ]{7,}" required />
-                    </label>
-                    <label class="top"
-                        >Email*
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="someone@gmail.com"
-                            required
-                            title="Please enter a valid email address"
-                    /></label>
-                    <label class="top"
-                        >Mobile Phone*
-                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="5559991234" required
-                    /></label>
+                    <label>First Name* <input type="text" id="fname" name="fname" placeholder="First Name" required></label>
+                    <label>Last Name* <input type="text" id="lname" name="lname" placeholder="Last Name" required></label>
+                    <label>Title or Position*<input type="text" id="position" name="position" pattern="[a-zA-Z\- ]{7,}" required></label>
+                    <label>Email*<input type="email" id="email" name="email" placeholder="someone@gmail.com" required title="Please enter a valid email address"></label>
+                    <label>Mobile Phone*<input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" placeholder="5559991234" required></label>
                 </fieldset>
                 <fieldset>
                     <legend>Business Information</legend>
-                    <label class="top">Business/Organization's Name* <input type="text" id="business" name="business" required /></label>
-                    <label class="top">Business/Organization Description <textarea id="description" name="description"></textarea></label>
+                    <label>Business/Organization's Name* <input type="text" id="business" name="business" required></label>
+                    <label>Business/Organization Description <textarea id="description" name="description"></textarea></label>
                 </fieldset>
                 <fieldset>
                     <legend>Membership</legend>
                     <div>Membership Level</div>
-                    <label class="sbs"><input type="radio" name="membership" value="np" required /> Non Profit</label>
-                    <label class="sbs"><input type="radio" name="membership" value="bronze" required /> Bronze Membership</label>
-                    <label class="sbs"><input type="radio" name="membership" value="silver" required /> Silver Membership</label>
-                    <label class="sbs"><input type="radio" name="membership" value="gold" required /> Gold Membership</label>
+                    <label><input type="radio" name="membership" value="np" required /> Non Profit</label>
+                    <label><input type="radio" name="membership" value="bronze" required /> Bronze Membership</label>
+                    <label><input type="radio" name="membership" value="silver" required /> Silver Membership</label>
+                    <label><input type="radio" name="membership" value="gold" required /> Gold Membership</label>
                 </fieldset>
                 <div id="submitmessage" class="hide" role="alert"></div>
                 <button class="submitBtn" type="submit" onclick="validateForm(event)">Join</button>
