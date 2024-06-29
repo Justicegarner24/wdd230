@@ -1,9 +1,14 @@
-//const apiKey = "0aec6412eede92415f476e7030db63f4";
+const apiKey = "1e627a45cdd86e20f4c6b23a4983a9aa";
 
-//const lat = 40.2969;
-//const lon = -111.6946;
+// Idaho Falls/lincoln Idaho
+// 43.49337448355192, -112.03821506055607
 
-//const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
+const lat = 43.49337448355192;
+const lon = -112.03821506055607;
+
+
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
+
 
 fetch("https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/orem%20Utah?unitGroup=us&key=YOUR_API_KEY&contentType=json", {
   "method": "GET",
