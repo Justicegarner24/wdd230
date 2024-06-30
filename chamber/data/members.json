@@ -1,0 +1,88 @@
+{
+    "members": [
+        {
+            "company": "Amazon",
+            "address": "12 Main St",
+            "city": "Idaho Falls",
+            "state": "ID",
+            "zip": "83401",
+            "phone": "208-456-7890",
+            "website": "amazon.com",
+            "logo": "",
+            "membership": "Gold",
+            "category": "Distribution & Logistics"
+        },
+        {
+            "company": "Mrs. Powell's",
+            "address": "4877 N Cotton Ln",
+            "city": "Idaho Falls",
+            "state": "ID",
+            "zip": "83401",
+            "phone": "208-555-7890",
+            "website": "mrspowells.com",
+            "logo": "",
+            "membership": "Gold",
+            "category": "Food & Beverages"
+        },
+        {
+            "company": "City Bagels and Bakery",
+            "address": "123 Main St",
+            "city": "Idaho Falls",
+            "state": "ID",
+            "zip": "83401",
+            "phone": "208-240-4300",
+            "website": "citybagels.com",
+            "logo": "",
+            "membership": "Silver",
+            "category": "Food & Beverages"
+        },
+        {
+            "company": "Hello Fresh",
+            "address": "1234 Main St",
+            "city": "Idaho Falls",
+            "state": "ID",
+            "zip": "83401",
+            "phone": "208-555-7999",
+            "website": "hellofresh.com",
+            "logo": "",
+            "membership": "Silver",
+            "category": "Distribution & Logistics"
+        },
+        {
+            "company": "Big Swigz",
+            "address": "1658 S Litchfield Rd",
+            "city": "Idaho Falls",
+            "state": "ID",
+            "zip": "83401",
+            "phone": "208-555-9000",
+            "website": "bigswigz.com",
+            "logo": "",
+            "membership": "Bronze",
+            "category": "Food & Beverages"
+        },
+        {
+            "company": "EZ Detailing",
+            "address": "2728 E 14th N",
+            "city": "Idaho Falls",
+            "state": "ID",
+            "zip": "83401",
+            "phone": "208-492-2300",
+            "website": "EZdetailing.com",
+            "logo": "",
+            "membership": "Silver",
+            "category": "Services"
+        },
+        {
+            "company": "manwaring Cheese",
+            "address": "255 S Main St",
+            "city": "Idaho Falls",
+            "state": "ID",
+            "zip": "83401",
+            "phone": "208-444-7766",
+            "website": "manwaring.com",
+            "logo": "",
+            "membership": "Gold",
+            "category": "Food & Beverages"
+        }
+    ]
+}

@@ -1,17 +1,77 @@
 {
-    "weeks": [
+  "weeks": [
       {
-        "week": "Week 1",
-        "links": [
-          {
-            "url":"week01/media-query.html",
-            "title":"HG Layout"
-          },
-          {
-            "url":"",
-            "title":"mQueries"
-          }
-        ]
+          "week": "01",
+          "links": [
+              {
+                  "url": "week.01/chamber-site-plan.html",
+                  "title": "Chamber Site Plan"
+              },
+              {
+                  "url": "week.01/holygrail.html",
+                  "title": "Holy Grail Layout"
+              },
+              {
+                  "url": "week.01/media-query.html",
+                  "title": "Media Query"
+              }
+          ]
+      },
+      {
+          "week": "02",
+          "links": [
+              {
+                  "url": "week.02/design.html",
+                  "title": "Web Design Principles"
+              },
+              {
+                  "url": "week.02/bom.html",
+                  "title": "Book of Mormon" 
+              },
+              {
+                  "url": "lesson02/design-principles.html",
+                  "title": "Design Principles Assignment"
+              }
+          ]
+      },
+      {
+          "week": "03",
+          "links": [
+              {
+                  "url": "week.03/bom.html",
+                  "title": "Book of Mormon Top 10"
+              },
+              {
+                  "url": "week.03/lazyload.html",
+                  "title": "Lazy Load"
+              },
+              {
+                  "url": "week.03/responsive-images.html",
+                  "title": "Responsive Images"
+              }
+          ]
+      },
+      {
+          "week": "04",
+          "links": [
+              {
+                  "url": "week.04/tablebuild.html",
+                  "title": "Table Build"
+              }
+          ]
+      },
+      {
+          "week": "05",
+          "links": [
+              {
+                  "url": "week.05/prophets.html",
+                  "title": "Prophets"
+              },
+              {
+                  "url": "week.05/weather.html",
+                  "title": "Weather"
+              }
+          ]
       }
-    ]
+  ]
 }

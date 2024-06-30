@@ -60,43 +60,21 @@
         </div>
     </header>
     <main>
-        <div class="hero-container">
-            <picture>
-                <source media="(max-width: 37.5em)" srcset="images/IF-hero-img">
-                <source media="(max-width: 60em)" srcset="images/IF-hero-img">
-                <img id="hero-image" src="images/idahofallsimg.png" alt="large hero image" loading="lazy">
-            </picture>
-            <h1 class="hero-text">Welcome to the Idaho Falls Chamber of Commerce</h1>
-            <div class="call-to-action">
-                <button onclick="redirect()" class="cta-button">Join Us Today</button>
-            </div>
-        </div>
- 
-        <section id="current-events">
-            <img src="images/event-icon.png" alt="event icon" id="event-icon">
-            <h2>Upcoming Event:</h2>
-            <h4><strong>Event Title: </strong>Fathers Day Party Night</h4>
-            <p><strong>Date and Time: </strong>June 15th, 2024 at 2:00pm</p>
-            <p><strong>Location: </strong>Idaho Falls Event Center</p>
-            <p>Join us for an evening celebration for all dads, including you! 
-                This event is hosted by the Idaho Falls Chamber of Commerce.
-            </p>
-        </section>
-
-        <section id="weather-card">
-            <h2> Weather Information</h2>
-            <h4>Idaho Falls, Idaho</h4>
-            <div class="weather">
-                <h4>Today</h4>
-                <h4><span id="current-temp"></span> </h4>
+        <section class="hero-directory">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Idahon Falls Chamber of Commerce</h2>
+                    <p>Discover the latest news and events happening in Idaho Falls.</p>
+                </div>
             </div>
         </section>
-
-        <section id="company-spotlight" class="spotlight">
-            <h2>Activities Director</h2>
-            <h4>Justice Garner</h4>
-            <p>Justice has done a great job of running our activities department.</p>
-            <p>Member Since: 2020</p>
+        <section id="directory">
+            <h2>Directory of Business Members</h2>
+            <div class="menu">
+                <button id="gridBtn">Grid</button>
+                <button id="listBtn">List</button>
+            </div>
+            <article id="members" class="grid"></article>
         </section>
     </main>
 
@@ -127,7 +105,7 @@
                     <span>
                         Last Updated: <span id="lastModified"></span>
                     </span>
-                </div>
+                </div>">
             </div>
         </div>
     </footer>
