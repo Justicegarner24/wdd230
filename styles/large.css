@@ -23,11 +23,6 @@
     .attribute {
         font-size: 1.75em;
     }
-
-
-    .card-grid {
-        
-    }
     .card-grid section:nth-child(1) {
         grid-column: span 2;
     }
