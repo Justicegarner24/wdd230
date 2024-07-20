@@ -1,54 +1,85 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <meta name="description"
-    content="Official Chamber Site for Idaho Falls">
+    <title>Idaho Falls Chamber of Commerce | Empowering Business, Building Community</title>
     <meta name="author" content="Justice Garner">
+    <meta name="description"
+        content="The Idaho Falls Community one-stop website for everything commerce, and community development. The Idaho Falls Business Chamber bridge the gap between community members and the nation.">
+    <meta property="og:title" content="Idaho Falls Business Chamber ">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://justicegarner24.github.io/wdd230/chamber/index.html">
+    <meta property="og:image" content="https://justicegarner24.github.io/wdd230/chamber/images/hero-img">
+    <meta property="og:site_name" content="Idaho Falls Business Chamber">
+    <meta property="og:description"
+        content="The Idaho Falls Community one-stop website for everything commerce, and community development. The Idaho Falls Business Chamber bridge the gap between community members and the nation. The Chamber offers  start-ups business investors, networking events, trade fare, agricultural development in the most renewable way, last but not least, tech innovations. So, check us out.">
+    <link rel="icon" href="images/favicon-7.ico">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;700&family=Poppins&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="icon" href="images/favicon-7.ico">
-    
-    <meta property="og:title" content="idaho Falls Chamber of Commerce">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://example.com/image.jpg">
-    <meta property="og:url" content="https://example.com/your-page-url">
-    <meta property="og:description" content="A site to learn of all the events happening in Idaho Falls">
-    <meta property="og:site_name" content="Idaho Falls Chamber of Commerce">
 </head>
-<body>
+
+<body class="homepage-body">
+    <div id="banner" class="banner" role="alert">
+        <p>Attend The Idaho falls Chamber of Commerce meet and greet 🤝 on Wednesday at 7:00 p.m.</p>
+        <button id="closeBanner" class="close-button" aria-label="Close">×</button>
+    </div>
+
     <header>
-        <div class="logo">
-            <img src="images/idaho-falls-logo.webp" alt="logo" width="80" height="80">
-            <h1 id="logo-text">Idaho Falls Chamber of Commerce</h1>
+        <button class="menu-btn" aria-label="Toggle menu button">
+        </button>
+
+        <div class="logo-box">
+            <a href="index.html"><img src="images/idaho-falls-logo.webp" alt="Idaho Falls Business Chamber logo" class="logo"
+                    width="80" height="">
+            </a>
         </div>
-        <div class="nav-box">
-            <div class="nav-info">
-                <input type="checkbox" id="nav-toggle" class="nav-toggle">
-                <nav class="nav-links">
-                    <ul>
-                        <li><a href="index.html"">Home</a></li>
-                        <li><a href="discover.html">Discover</a></li>
-                        <li><a href="directory.html">Directory</a></li>
-                        <li><a href="join.html"class="active-page">Join</a></li>
-                    </ul>
-                </nav>
-                <label for="nav-toggle" class="nav-btn">
+
+        <nav class="header-nav">
+            <ul class="nav-list">
+                <li><a href="index.html" class="nav-links"> HOME</a></li>
+                <li><a href="discover.html" class="nav-links"> DISCOVER</a></li>
+                <li><a href="directory.html" class="nav-links"> DIRECTORY</a></li>
+                <li><a href="join.html" class="nav-links"> JOIN</a></li>
+            </ul>
+
+            <div aria-label="Light and dark mode toggle switch" role="switch" aria-checked="false" tabindex="0">
+                <span class="switch">
                     <span></span>
-                    <span></span>
-                    <span></span>
-                </label>
+                </span>
+                <span class="off" aria-hidden="true">
+                </span>
+
+                <span class="on" aria-hidden="true">
+                </span>
             </div>
-        </div>
-            <div class="dark-mode">
-                <input id="darkOption" class="checkbox" type="checkbox"
-                onclick="screenMode()">
-                <label class="toggle" for="darkOption">
-                    <span class="slider"></span>
-                </label>
+        </nav>
+
+        <div class="header-box">
+            <div class="header-intro">
+                <div>
+                    <h1>Welcome to Idaho falls Chamber of Commerce</h1>
+                    <span class="motto-text">Empowering Business, Building Community</span>
+                </div>
+
+                <div>
+                    <p>Join us in the journey to empower businesses, uplift communities, and create a brighter tomorrow.
+                        We are
+                        dedicated to fostering collaboration, driving economic growth, building lasting connection</p>
+                </div>
+
+                <div class="cta-box">
+                    <a href="join.html" role="button" class="btn-join">JOIN US</a>
+                    <a href="discover.html" role="button" class="btn-explore">EXPLORE</a>
+                </div>
             </div>
         </div>
     </header>
@@ -83,38 +114,25 @@
             </form>
         </div>
     </main>
-
     <footer>
-        <section class="footer-info">
-            <div class="footer-title">
-                <img src="images/idaho-falls-logo.webp" alt="logo" width="80" height="80">
-                <h1>Idaho Falls Chamber of Commerce</h1>
-            </div>
-            <div class="footer-address">
-                <h3>Contact</h3>
-                <address>
-                    123 Main St.
-                    <br>
-                    Idaho Falls, ID 83401
-                    <br>
-                    <a class="footer-btn" href="mailto:Ql6QW@example.com">Email Us</a>
-                </address>
-            </div>
-            <div class="legal">
-                <div class="copyright">
-                    <span>
-                        <span id="cYear">© 2024</span>
-                        Idaho Falls Chamber of Commerce | Justice Garner | WDD 230 website
-                    </span>
-                </div>
-                <div class="last-modified">
-                    <span>
-                        Last Updated: <span id="lastModified"></span>
-                    </span>
-                </div>
-            </div>
+        <div class="contact-box">
+            <p class="footer-captions">Contact Us</p>
+            <address>
+                <a href="gar17042@byui.edu">📧 gar17042@byui.edu</a>
+                <!-- <br> -->
+                <a href="tel:208-419-5472">📞 (208) 419-5472</a>
+                <p>📍 1234 Main st</p>
+                <p>Idaho Falls, ID</p>
+            </address>
+        </div>
+        <div class="copyright-box">
+            <p>&copy; <span id="year"></span> | Justice Garner - WDD230 | Rexburg Idaho</p>
+            <p>Last modified: <span class="last-modify"></span></p>
+            <p id="analytics"></p>
         </div>
     </footer>
-    <script src="scripts/chamber.js"></script>
+
+    <script defer src="scripts/index.js"></script>
 </body>
+
 </html>
