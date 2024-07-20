@@ -10,11 +10,10 @@
     --fluid-text-2: clamp(1.44rem, calc(1.25rem + 0.97vw), 2rem);
     --fluid-text-3: clamp(1.73rem, calc(1.4rem + 1.63vw), 2.66rem);
     --body-text-clamp: clamp(1.6rem, calc(1.8rem + 0.97vw), 2rem);
-    --header-bg: rgba(223, 247, 254, 0.7);
-    --section-bg: rgba(17, 31, 45, 0.5);
-    --section-header: linear-gradient(147deg, #ffb99a 0%, #ffdbc5 100%);
-    --bg-color: #fff0e0;
-    --bg-img: url(../images/leaf.WEBP);
+    --header-bg: #B4ADEA;
+    --section-bg: #EF767A;
+    --section-header: #59FFA0;
+    --bg-color: #535353;
   }
   
   *,
