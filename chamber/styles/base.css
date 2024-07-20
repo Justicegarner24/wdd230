@@ -84,9 +84,11 @@ h1 {
     font-size: 2em;
     color: var(--headline-color-on-white);
 }
-
-/* Nav Section */
+/* Nav settings */
 #menu {
+    /* position: absolute;
+    top: 0.25em;
+    right: 0.25em; */
     color: var(--primary-color);
     text-align: center;
     width: 40px;
@@ -103,7 +105,7 @@ h1 {
     content: "X";
 }
 
-.navigation {
+.nav-box {
     display: flex;
     flex-direction: column;
     list-style: none;
@@ -112,7 +114,6 @@ h1 {
     margin: 0;
     padding: 0;
     white-space: nowrap;
-    text-shadow: 1px 3px 1px black;
 }
 .navigation li {
     display: none;
@@ -138,9 +139,8 @@ h1 {
 }
 
 .navigation .active {
-    color: #FFED65;
+    color: yellow;
 }
-
 /* Main content section */
 main {
     display: flex;

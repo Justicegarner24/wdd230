@@ -9,6 +9,7 @@
     <meta name="author" content="Justice Garner">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="icon" href="images/favicon-7.ico">
     
     <meta property="og:title" content="idaho Falls Chamber of Commerce">
@@ -24,31 +25,24 @@
             <img src="images/idaho-falls-logo.webp" alt="logo" width="80" height="80">
             <h1 id="logo-text">Idaho Falls Chamber of Commerce</h1>
         </div>
-        <div class="navbar">
-            <div class="nav-toggle">
-                <input id="nav-toggle" class="nav-toggle" type="checkbox">
+        <div class="nav-box">
+            <div class="nav-info">
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
                 <nav class="nav-links">
                     <ul>
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="discover.html">Discover</a>
-                        </li>
-                        <li>
-                            <a href="directory.html">Directory</a>
-                        </li>
-                        <li>
-                            <a href="join.html">Join</a>
-                        </li>
+                        <li><a href="index.html"">Home</a></li>
+                        <li><a href="discover.html">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html"class="active-page">Join</a></li>
                     </ul>
                 </nav>
-                <label class="nav-button" for="nav-toggle">
+                <label for="nav-toggle" class="nav-btn">
                     <span></span>
                     <span></span>
                     <span></span>
                 </label>
             </div>
+        </div>
             <div class="dark-mode">
                 <input id="darkOption" class="checkbox" type="checkbox"
                 onclick="screenMode()">
@@ -117,7 +111,7 @@
                     <span>
                         Last Updated: <span id="lastModified"></span>
                     </span>
-                </div>">
+                </div>
             </div>
         </div>
     </footer>

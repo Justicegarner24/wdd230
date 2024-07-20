@@ -24,31 +24,24 @@
             <img src="images/idaho-falls-logo.webp" alt="logo" width="80" height="80">
             <h1 id="logo-text">Idaho Falls Chamber of Commerce</h1>
         </div>
-        <div class="navbar">
-            <div class="nav-toggle">
-                <input id="nav-toggle" class="nav-toggle" type="checkbox">
+        <div class="nav-box">
+            <div class="nav-info">
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
                 <nav class="nav-links">
                     <ul>
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="discover.html">Discover</a>
-                        </li>
-                        <li>
-                            <a href="directory.html">Directory</a>
-                        </li>
-                        <li>
-                            <a href="join.html">Join</a>
-                        </li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="discover.html"class="active-page">Discover</a></li>
+                        <li><a href="directory.html">Directory</a></li>
+                        <li><a href="join.html">Join</a></li>
                     </ul>
                 </nav>
-                <label class="nav-button" for="nav-toggle">
+                <label for="nav-toggle" class="nav-btn">
                     <span></span>
                     <span></span>
                     <span></span>
                 </label>
             </div>
+        </div>
             <div class="dark-mode">
                 <input id="darkOption" class="checkbox" type="checkbox"
                 onclick="screenMode()">
@@ -59,6 +52,17 @@
         </div>
     </header>
     <main>
+        <div class="hero-container">
+            <picture>
+                <source media="(max-width: 37.5em)" srcset="images/IF-hero-img">
+                <source media="(max-width: 60em)" srcset="images/IF-hero-img">
+                <img id="hero-image" src="images/snake-river.webp" alt="large hero image" loading="lazy">
+            </picture>
+            <h1 class="hero-text">Welcome to the Idaho Falls Chamber of Commerce</h1>
+            <div class="call-to-action">
+                <button onclick="redirect()" class="cta-button">Join Us Today</button>
+            </div>
+        </div>
         <section class="hero-discover">
             <div class="container">
                 <div class="hero-content">
@@ -189,7 +193,7 @@
                     <span>
                         Last Updated: <span id="lastModified"></span>
                     </span>
-                </div>">
+                </div>
             </div>
         </div>
     </footer>
